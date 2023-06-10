@@ -16,12 +16,18 @@ object Version {
     const val androidTestImplementationJunit = "1.1.5"
     const val androidTestImplementationEspresso = "3.5.1"
     const val daggerHiltNavigationCompose = "1.0.0"
+    const val composeMaterial3 = "1.2.0-alpha02"
+    const val coilCore = "2.0.0-rc01"
 }
 
 object AndroidX {
     const val coreKTX = "androidx.core:core-ktx:${Version.androidXCoreKTX}"
     const val lifecycleRuntimeKTX = "androidx.lifecycle:lifecycle-runtime-ktx:${Version.androidXLifecycleRuntimeKTX}"
     const val appCompat = "androidx.appcompat:appcompat:${Version.androidXAppCompat}"
+}
+
+object Coil {
+    const val core = "io.coil-kt:coil-compose:${Version.coilCore}"
 }
 
 object Compose {
@@ -32,6 +38,7 @@ object Compose {
     const val lifecycleViewModel = "androidx.lifecycle:lifecycle-viewmodel-compose:${Version.composeLifecycleViewModel}"
     const val navigation = "androidx.navigation:navigation-compose:${Version.composeNavigation}"
     const val icons = "androidx.compose.material:material-icons-extended:${Version.composeIcons}"
+    const val material3 = "androidx.compose.material3:material3:${Version.composeIcons}"
 }
 
 object Coroutines {
