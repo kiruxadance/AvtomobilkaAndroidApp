@@ -48,6 +48,8 @@ dependencies {
     implementation project(":core:common")
     implementation project(":feature_car_details:domain")
 
+    implementation "me.onebone:toolbar-compose:2.3.2"
+
     implementation AndroidX.coreKTX
     implementation AndroidX.lifecycleRuntimeKTX
     implementation Compose.activity

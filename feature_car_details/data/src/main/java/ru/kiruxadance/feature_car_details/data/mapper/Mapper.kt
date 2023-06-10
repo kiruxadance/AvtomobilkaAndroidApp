@@ -6,7 +6,7 @@ import ru.kiruxadance.feature_car_details.domain.model.*
 fun CarDetailsResponse.toDomainCarDetails(): CarDetails {
     return CarDetails(
         car = this.car.toDomainCar(),
-        user = this.user.toUserDetailsDomain()
+        user = this.user.toUserDomain()
     )
 }
 
@@ -72,16 +72,4 @@ fun List<PostDto>.toDomainPosts(): List<Post> {
             text = it.text
         )
     }
-}
-
-fun UserDetailsDto.toUserDetailsDomain(): UserDetails {
-    return UserDetails(
-        about = this.about,
-        auto_count = this.auto_count,
-        avatar = this.avatar.toAvatarDomain(),
-        email = this.email,
-        id = this.id,
-        main_auto_name = this.main_auto_name,
-        username = this.username
-    )
 }

@@ -18,7 +18,7 @@ object InternalCarDetailsApi : FeatureApi {
         {
             composable(CarsDetailsFeature.carDetailsScreenRoute) {
                 val viewModel = hiltViewModel<CarDetailsViewModel>()
-                CarDetailsScreen(viewModel = viewModel)
+                CarDetailsScreen(viewModel = viewModel, navController)
             }
         }
     }
